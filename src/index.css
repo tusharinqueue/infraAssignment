@@ -1,0 +1,71 @@
+body {
+  font-family: sans-serif;
+  background: #f7f7f7;
+  color: #222;
+  margin: 0;
+  padding: 0 16px 40px;
+}
+
+.container, .auth-wrapper {
+  max-width: 600px;
+  margin: 30px auto;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 14px 0;
+  border-bottom: 1px solid #ddd;
+}
+.navbar-brand { font-weight: bold; font-size: 18px; }
+.navbar-user { display: flex; align-items: center; gap: 10px; font-size: 13px; color: #555; }
+
+.auth-box, .create-note-box, .note-card, .modal-window {
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 16px;
+}
+.create-note-box { margin-bottom: 20px; }
+.form-group { margin-bottom: 12px; }
+.form-group label { display: block; font-size: 13px; margin-bottom: 4px; font-weight: bold; }
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font: inherit;
+}
+
+.btn {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #f0f0f0;
+  cursor: pointer;
+  font: inherit;
+  font-size: 13px;
+}
+.btn-primary { background: #0066cc; color: #fff; border-color: #0066cc; }
+.btn-danger { color: #c00; border-color: #fbb; background: #fff; }
+.btn-small { padding: 3px 8px; font-size: 12px; }
+.btn-full { width: 100%; margin-top: 6px; }
+.link-btn { background: none; border: none; color: #0066cc; cursor: pointer; text-decoration: underline; font: inherit; }
+
+.notes-toolbar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.note-card { margin-bottom: 10px; }
+.note-card-title { font-weight: bold; margin-bottom: 4px; }
+.note-card-content { white-space: pre-wrap; font-size: 14px; margin-bottom: 8px; color: #444; }
+.note-card-footer { display: flex; justify-content: space-between; align-items: center; font-size: 12px; color: #888; border-top: 1px solid #eee; padding-top: 8px; }
+.note-actions { display: flex; gap: 6px; }
+.empty-message { text-align: center; padding: 30px; color: #777; background: #fff; border: 1px dashed #ccc; border-radius: 4px; }
+
+.alert-error { background: #fee; color: #900; border: 1px solid #fcc; padding: 8px; border-radius: 4px; margin-bottom: 12px; font-size: 13px; }
+.modal-backdrop { position: fixed; inset: 0; background: rgba(0,0,0,0.3); display: flex; align-items: center; justify-content: center; padding: 16px; }
+.modal-window { width: 100%; max-width: 440px; }
+.modal-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 12px; }
+.modal-close { background: none; border: none; font-size: 20px; cursor: pointer; }
+.modal-footer { display: flex; justify-content: flex-end; gap: 8px; margin-top: 12px; }
+.auth-toggle { margin-top: 14px; text-align: center; font-size: 13px; color: #666; }
